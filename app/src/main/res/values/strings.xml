@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Google Book Search</string>
+    <string name="by_title">Search by title</string>
+    <string name="by_author">Search by author</string>
+    <string name="by_publisher">Search by publisher</string>
+    <string name="instructions">Enter your search above and\nselect type of search below</string>
+    <string name="go">Go!</string>
+    <string name="no_books">No books to display.</string>
+    <string name="no_internet_connection">No internet connection.</string>
+    <string name="enter">Please enter text.</string>
+    <string name="result">Results</string>
+    <string name="no_title">No title available</string>
+    <string name="no_subtitle">No subtitle available</string>
+    <string name="no_publisher">No publisher available</string>
+    <string name="no_authors">No authors available</string>
+    <string name="no_date">No date available</string>
+    <string name="no_pages">No pages available</string>
+    <string name="no_rating">No rating available</string>
+    <string name="no_description">No description available</string>
+    <string name="publisher">Publisher</string>
+    <string name="date">Date</string>
+    <string name="pages">Pages</string>
+    <string name="rating">Rating</string>
+</resources>
