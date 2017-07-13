@@ -21,10 +21,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
     }
 
-    public void searchFunc(View view){
+    public void searchFunc(View view) {
         EditText input = (EditText) findViewById(R.id.input);
         CharSequence userInput = input.getText();
         String userInputString = userInput.toString();
@@ -38,16 +37,16 @@ public class MainActivity extends AppCompatActivity {
         Boolean publisher = RB3.isChecked();
 
 
-        if(title){
-            BOOK_REQUEST_URL = "https://www.googleapis.com/books/v1/volumes?q="+ userInputString +"&intitle&maxResults=10";
-        }else if(author){
-            BOOK_REQUEST_URL = "https://www.googleapis.com/books/v1/volumes?q="+ userInputString +"&inauthor&maxResults=10";
-        }else{
+        if (title) {
+            BOOK_REQUEST_URL = "https://www.googleapis.com/books/v1/volumes?q=" + userInputString + "&intitle&maxResults=10";
+        } else if (author) {
+            BOOK_REQUEST_URL = "https://www.googleapis.com/books/v1/volumes?q=" + userInputString + "&inauthor&maxResults=10";
+        } else {
             BOOK_REQUEST_URL = "https://www.googleapis.com/books/v1/volumes?q=" + userInputString + "&inpublisher&maxResults=10";
         }
-        Log.i("URL",BOOK_REQUEST_URL);
+        Log.i("URL", BOOK_REQUEST_URL);
         Intent NQIntent = new Intent(MainActivity.this, ResultsActivity.class);
-        NQIntent.putExtra("BOOKER",BOOK_REQUEST_URL);
+        NQIntent.putExtra("BOOKER", BOOK_REQUEST_URL);
         startActivity(NQIntent);
 
     }

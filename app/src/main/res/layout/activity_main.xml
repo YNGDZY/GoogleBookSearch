@@ -8,11 +8,11 @@
     tools:context="com.example.deezy.googlebooksearch.MainActivity">
 
     <EditText
+        android:id="@+id/input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:hint="@string/enter"
-        android:id="@+id/input"/>
+        android:hint="@string/enter" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -21,40 +21,40 @@
         android:text="@string/instructions" />
 
     <RadioGroup
+        android:id="@+id/RBG"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_margin="16dp"
-        android:id="@+id/RBG"
         android:checkedButton="@+id/RB1">
 
         <RadioButton
+            android:id="@id/RB1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/by_title"
-            android:id="@id/RB1"/>
+            android:text="@string/by_title" />
 
         <RadioButton
+            android:id="@+id/RB2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/by_author"
-            android:id="@+id/RB2"/>
+            android:text="@string/by_author" />
 
         <RadioButton
+            android:id="@+id/RB3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/by_publisher"
-            android:id="@+id/RB3"/>
+            android:text="@string/by_publisher" />
 
 
     </RadioGroup>
 
     <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="@string/go"
-        android:id="@+id/button"
-        android:onClick="searchFunc"/>
+        android:onClick="searchFunc"
+        android:text="@string/go" />
 
 </LinearLayout>

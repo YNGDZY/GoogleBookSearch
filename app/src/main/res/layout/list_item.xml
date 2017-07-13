@@ -1,132 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:gravity="center_horizontal">
-
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
 
 
     <TextView
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="Title"
-        android:id="@+id/title"
         android:padding="16dp"
         android:textColor="#000000"
-        android:textSize="24dp"/>
+        android:textSize="24dp"
+        tools:text="Title" />
 
     <TextView
+        android:id="@+id/subtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="Subtitle"
-        android:id="@+id/subtitle"
         android:padding="16dp"
+        android:textColor="#000000"
         android:textSize="20dp"
-        android:textColor="#000000"/>
+        tools:text="Subtitle" />
 
     <TextView
         android:id="@+id/authors"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="Authors"
+        android:gravity="center_horizontal"
         android:padding="16dp"
-        android:gravity="center_horizontal"/>
+        tools:text="Authors" />
 
     <TextView
+        android:id="@+id/description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="Description"
-        android:id="@+id/description"
+        android:gravity="center_horizontal"
         android:padding="16dp"
-        android:gravity="center_horizontal"/>
+        tools:text="Description" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
 
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/publisher"
-            android:padding="8dp"
-            android:layout_weight="1"
-            android:gravity="center"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/date"
-            android:padding="8dp"
-            android:layout_weight="1"
-            android:gravity="center" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/pages"
-            android:padding="8dp"
             android:layout_weight="1"
             android:gravity="center"
-            />
+            android:padding="8dp"
+            android:text="@string/publisher" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/rating"
-            android:padding="8dp"
             android:layout_weight="1"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/date" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/pages" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/rating" />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
 
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:text="Publisher"
             android:id="@+id/publisher"
-            android:padding="8dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:textColor="#000000"/>
-        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="Publish Date"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="#000000"
+            tools:text="Publisher" />
+
+        <TextView
             android:id="@+id/publishDate"
-            android:padding="8dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:textColor="#000000"/>
-        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="pages"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="#000000"
+            tools:text="Publish Date" />
+
+        <TextView
             android:id="@+id/pages"
-            android:padding="8dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:textColor="#000000"/>
-        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="Rating"
-            android:id="@+id/rating"
-            android:padding="8dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:textColor="#000000"/>
+            android:padding="8dp"
+            android:textColor="#000000"
+            tools:text="pages" />
+
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="#000000"
+            tools:text="Rating" />
 
 
     </LinearLayout>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_margin="16dp"
-        android:background="#000000"/>
+        android:background="#000000" />
 </LinearLayout>
