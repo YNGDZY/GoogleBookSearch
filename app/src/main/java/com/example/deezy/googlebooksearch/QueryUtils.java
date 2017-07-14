@@ -120,10 +120,17 @@ public final class QueryUtils {
 
         List<Book> books = new ArrayList<Book>();
         String authorsStr = "";
+        JSONArray items;
 
         try {
             JSONObject root = new JSONObject(bookJSON);
-            JSONArray items = root.getJSONArray("items");
+            try {
+                items = root.getJSONArray("items");
+            } catch (JSONException e) {
+                Log.e(LOG_TAG, "No item available", e);
+                items = null;
+            }
+            
             for (int i = 0; i < items.length(); i++) {
                 String title;
                 String subtitle;
@@ -132,7 +139,6 @@ public final class QueryUtils {
                 int pages;
                 String rating;
                 String description;
-
 
                 JSONObject it = items.getJSONObject(i).getJSONObject("volumeInfo");
                 try {

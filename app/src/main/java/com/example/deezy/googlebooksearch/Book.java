@@ -61,37 +61,5 @@ public class Book {
     public String getmDescription() {
         return mDescription;
     }
-
-    public void setmTitle(String mTitle) {
-        this.mTitle = mTitle;
-    }
-
-    public void setmSubtitle(String mSubtitle) {
-        this.mSubtitle = mSubtitle;
-    }
-
-    public void setmAuthors(String mAuthors) {
-        this.mAuthors = mAuthors;
-    }
-
-    public void setmPublisher(String mPublisher) {
-        this.mPublisher = mPublisher;
-    }
-
-    public void setmDate(String mDate) {
-        this.mDate = mDate;
-    }
-
-    public void setmPages(int mPages) {
-        this.mPages = mPages;
-    }
-
-    public void setmRating(String mRating) {
-        this.mRating = mRating;
-    }
-
-    public void setmDescription(String mDescription) {
-        this.mDescription = mDescription;
-    }
 }
 
