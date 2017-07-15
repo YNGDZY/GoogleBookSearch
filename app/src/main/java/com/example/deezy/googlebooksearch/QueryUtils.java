@@ -130,7 +130,7 @@ public final class QueryUtils {
                 Log.e(LOG_TAG, "No item available", e);
                 items = null;
             }
-            
+
             for (int i = 0; i < items.length(); i++) {
                 String title;
                 String subtitle;
@@ -159,14 +159,21 @@ public final class QueryUtils {
                     Log.e(LOG_TAG, "No publisher available", e);
                     publisher = "No publisher available";
                 }
-                JSONArray authors = it.getJSONArray("authors");
+                JSONArray authors;
                 authorsStr = "";
-                for (int j = 0; j < authors.length(); j++) {
-                    if (authorsStr.isEmpty()) {
-                        authorsStr = authors.getString(j);
-                    } else {
-                        authorsStr = authorsStr + ", " + authors.getString(j);
+                try {
+                    authors = it.getJSONArray("authors");
+
+                    for (int j = 0; j < authors.length(); j++) {
+                        if (authorsStr.isEmpty()) {
+                            authorsStr = authors.getString(j);
+                        } else {
+                            authorsStr = authorsStr + ", " + authors.getString(j);
+                        }
                     }
+                }catch (JSONException e){
+                    Log.e(LOG_TAG, "no authors available", e);
+                    authorsStr = "No authors available";
                 }
                 try {
                     publishedDate = it.getString("publishedDate");
